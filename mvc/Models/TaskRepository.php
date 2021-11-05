@@ -54,7 +54,7 @@ use MVC\Models\TaskModel;
 	    * @param \MVC\Models\TaskModel $id
 	    * @return Boolean
 	    */
-	    public function delete($id): TaskModel
+	    public function delete($id)
 	    {
 	        return $this->taskresource->delete($id);
 	    }
