@@ -26,7 +26,7 @@ use MVC\Core\Model;
         *
         * @return int
         */
-        public function getId(): void {
+        public function getId() {
             return $this->id;
         }
 
@@ -45,7 +45,7 @@ use MVC\Core\Model;
         *
         * @return string
         */
-        public function getTitle(): void {
+        public function getTitle() {
             return $this->title;
         }
 
@@ -64,7 +64,7 @@ use MVC\Core\Model;
         *
         * @return string
         */
-        public function getDescription():void {
+        public function getDescription() {
             return $this->description;
         }
 
@@ -74,7 +74,7 @@ use MVC\Core\Model;
         * @param timestamps $created_at
         * @return BlockInterface
         */
-        public function getCreatedAt(): void {
+        public function getCreatedAt() {
             return $this->created_at;
         }
         
@@ -93,7 +93,7 @@ use MVC\Core\Model;
         * @param timestamps $updated_at
         * @return BlockInterface
         */
-        public function getUpdateAt(): void {
+        public function getUpdateAt() {
             return $this->updated_at;
         }
         
