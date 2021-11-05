@@ -1,6 +1,9 @@
 <?php
 namespace MVC\Models;
 use MVC\Core\Model;
+    /**
+    * Class TaskModel
+    */
     class TaskModel extends Model{
         protected $id;
         protected $title;
@@ -8,43 +11,98 @@ use MVC\Core\Model;
         protected $created_at;
         protected $updated_at;
         
-        public function setId($id) {
+        /**
+        * Set id
+        *
+        * @param int $id
+        * @return BlockInterface
+        */
+        public function setId($id): void {
             $this->id = $id;
         }
-        
-        public function getId() {
+
+        /**
+        * Get identifier
+        *
+        * @return int
+        */
+        public function getId(): void {
             return $this->id;
         }
 
-        public function setTitle($title) {
+        /**
+        * Set title
+        *
+        * @param string $title
+        * @return BlockInterface
+        */
+        public function setTitle($title): void {
             $this->title = $title;
         }
 
-        public function getTitle() {
+        /**
+        * Get identifier
+        *
+        * @return string
+        */
+        public function getTitle(): void {
             return $this->title;
         }
 
-        public function setDescription($description) {
+        /**
+        * Set description
+        *
+        * @param string $description
+        * @return BlockInterface
+        */
+        public function setDescription($description): void {
             $this->description = $description;
         }
 
-        public function getDescription() {
+        /**
+        * Get identifier
+        *
+        * @return string
+        */
+        public function getDescription():void {
             return $this->description;
         }
 
-        public function getCreatedAt() {
+        /**
+        * Set created_at
+        *
+        * @param timestamps $created_at
+        * @return BlockInterface
+        */
+        public function getCreatedAt(): void {
             return $this->created_at;
         }
         
-        public function setCreateAt($created_at) {
+        /**
+        * Get identifier
+        *
+        * @return timestamps
+        */
+        public function setCreateAt($created_at): void {
             $this->created_at = $created_at;
         }
 
-        public function getUpdateAt() {
+        /**
+        * Set created_at
+        *
+        * @param timestamps $updated_at
+        * @return BlockInterface
+        */
+        public function getUpdateAt(): void {
             return $this->updated_at;
         }
         
-        public function setUpdateAt($updated_at) {
+        /**
+        * Get identifier
+        *
+        * @return timestamps
+        */
+        public function setUpdateAt($updated_at): void {
             $this->updated_at = $updated_at;
         }
 
